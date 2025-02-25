@@ -28,6 +28,10 @@ export interface MapProps {
 
   animate?: boolean
   animateMaxScreens?: number
+  /**
+   * Time for animating center or zoom changes when these values change through props.
+   */
+  animateSpeed?: number
 
   minZoom?: number
   maxZoom?: number
@@ -50,7 +54,7 @@ export interface MapProps {
     center,
     zoom,
     bounds,
-    initial
+    initial,
   }: {
     center: [number, number]
     bounds: Bounds

@@ -335,7 +335,7 @@ export class Map extends Component<MapProps, MapReactState> {
         Math.abs(nextCenter[0] - currentCenter[0]) > 0.0001 ||
         Math.abs(nextCenter[1] - currentCenter[1]) > 0.0001
       ) {
-        this.setCenterZoomTarget(nextCenter, nextZoom, true)
+        this.setCenterZoomTarget(nextCenter, nextZoom, true, null, this.props.animateSpeed)
       }
     }
   }
